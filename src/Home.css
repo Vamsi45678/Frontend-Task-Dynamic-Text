@@ -1,0 +1,105 @@
+/* Home.css */
+
+/* General container styling */
+.home-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Space between video and config panel */
+  }
+  
+  /* Video section styling */
+  .video-section {
+    position: relative;
+    width: 60%; /* Take up 60% of the container */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  /* Draggable and resizable text box container styling */
+  .text-box-container {
+    position: relative;
+    cursor: move;
+  }
+  
+  /* Draggable and resizable text box styling */
+  .text-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Delete icon styling */
+  .delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: red;
+    font-size: 16px;
+    padding: 2px;
+    display: none; /* Hide by default */
+  }
+  
+  /* Show delete icon on hover */
+  .text-box-container:hover .delete-icon {
+    display: block;
+  }
+  
+  /* TextOptions (configuration panel) styling */
+  .text-options {
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    width: 35%; /* Take up 35% of the container */
+    margin-left: 20px;
+  }
+  
+  /* Configuration panel labels and input fields */
+  .config-panel {
+    margin-top: 10px;
+  }
+  
+  .config-panel label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .config-panel input[type="number"],
+  .config-panel input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Color input with a visible color line */
+  .config-panel input[type="color"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 2px solid #000; /* Black border for visibility */
+  }
+  
+  /* Checkbox input styling */
+  .config-panel input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Add Text button styling */
+  .add-text {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .add-text:hover {
+    background-color: #0056b3;
+  }
